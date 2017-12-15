@@ -1,15 +1,60 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HwWProject1_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" pagingScroll="YES" id="yJH-9D-1MS">
+                            <items>
+                                <tableRow identifier="Row" id="aeD-Ud-fUT" customClass="NoteSelectRow" customModule="HwWProject1_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="nN9-RR-PoV">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="v4q-vs-eCK"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="v4q-vs-eCK" id="fNw-57-oDb"/>
+                                        <segue destination="siT-ei-wEn" kind="push" id="b8M-FR-Ewa"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Add New Note" id="Nyf-96-2yb">
+                            <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                            <connections>
+                                <action selector="addNewNote" destination="AgC-eL-Hgc" id="vx2-4T-0iV"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="yJH-9D-1MS" id="dXt-oC-vLe"/>
+                    </connections>
+                </controller>
             </objects>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="XCn-Z6-jDy">
+            <objects>
+                <controller id="siT-ei-wEn" customClass="DetailInterfaceController" customModule="HwWProject1_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="2Wo-9R-hOx"/>
+                    </items>
+                    <connections>
+                        <outlet property="textLabel" destination="2Wo-9R-hOx" id="tuJ-xs-MDt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="332" y="44"/>
         </scene>
     </scenes>
 </document>

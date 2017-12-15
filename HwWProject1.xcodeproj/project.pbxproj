@@ -19,6 +19,8 @@
 		02E74C6D1FE451B300D6F892 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E74C6C1FE451B300D6F892 /* InterfaceController.swift */; };
 		02E74C6F1FE451B300D6F892 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E74C6E1FE451B300D6F892 /* ExtensionDelegate.swift */; };
 		02E74C711FE451B300D6F892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E74C701FE451B300D6F892 /* Assets.xcassets */; };
+		02E74C811FE4582D00D6F892 /* NoteSelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E74C801FE4582D00D6F892 /* NoteSelectRow.swift */; };
+		02E74C831FE4860000D6F892 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E74C821FE4860000D6F892 /* DetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		02E74C6E1FE451B300D6F892 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		02E74C701FE451B300D6F892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02E74C721FE451B300D6F892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E74C801FE4582D00D6F892 /* NoteSelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSelectRow.swift; sourceTree = "<group>"; };
+		02E74C821FE4860000D6F892 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 			children = (
 				02E74C6C1FE451B300D6F892 /* InterfaceController.swift */,
 				02E74C6E1FE451B300D6F892 /* ExtensionDelegate.swift */,
+				02E74C821FE4860000D6F892 /* DetailInterfaceController.swift */,
+				02E74C801FE4582D00D6F892 /* NoteSelectRow.swift */,
 				02E74C701FE451B300D6F892 /* Assets.xcassets */,
 				02E74C721FE451B300D6F892 /* Info.plist */,
 			);
@@ -298,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E74C811FE4582D00D6F892 /* NoteSelectRow.swift in Sources */,
 				02E74C6F1FE451B300D6F892 /* ExtensionDelegate.swift in Sources */,
+				02E74C831FE4860000D6F892 /* DetailInterfaceController.swift in Sources */,
 				02E74C6D1FE451B300D6F892 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
